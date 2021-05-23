@@ -2,7 +2,9 @@ import datetime as dt
 import pylab as lab
 import numpy as np
 
-#This line reads the part of the csv i specified, which is the column with timestamps of all the readings.
+#I created this code for the sole purpose of finding out how inaccurate the time.sleep function we used in the initial code was. 
+
+#This line reads the part of the csv i specified, which is the column with timestamps of all the readings. (the timestamps may also be inaccurate, i don't know. I had fun making this code anyways.)
 data = lab.loadtxt('Value_file.csv', skiprows=1, usecols=[6], dtype=np.datetime64, delimiter=',')
 
 #Defining variables for later.
