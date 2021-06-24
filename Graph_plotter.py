@@ -1,4 +1,4 @@
-import pandas as p #Importing the library i will use to plot the graphs
+import pandas as p #Importing the library i will use to read the csv
 
 data = p.read_csv('Value_file.csv', header=0, usecols=['Reading_nr', 'YValue', 'Temperature', 'Humidity%', 'Pressure']) #Creates a dataframe with all the values i want to make a graph out of.
 
